@@ -39,7 +39,7 @@ if __name__ == '__main__':
     qlearn = qlearn.QLearn(actions=range(env.action_space.n),
                            alpha=0.2, gamma=0.8, epsilon=0.9)
 
-    # qlearn.loadQ("QValues_A+")
+    qlearn.loadQ("QValues_A+")
 
     initial_epsilon = qlearn.epsilon
 
